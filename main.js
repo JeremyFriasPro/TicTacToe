@@ -5,8 +5,7 @@ const playersDisplay = document.getElementById("players-turn");
 class TicBoard {
 	constructor() {
 		this.tiles = new Array(9).fill("");
-		this.circleTurn = true;
-		this.playerTurn = this.circleTurn ? "o" : "x";
+		this.playerTurn = true ? "o" : "x";
 		this.allWinningSequences = [
 			[0, 1, 2],
 			[0, 3, 6],
